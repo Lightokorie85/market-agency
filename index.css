@@ -93,7 +93,7 @@ header {
 }
 
 .homecontent h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 600;
   text-align: center;
   color: var(--White);
@@ -432,7 +432,7 @@ header {
   /* === MOBILE HERO HEADING - TABLET SIZE === */
   .homecontent h1 {
     top: 3rem;
-    font-size: 6rem;
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
   }
   .card {
     width: 100%;
@@ -453,7 +453,7 @@ header {
 @media (max-width: 480px) {
   /* === MOBILE HERO HEADING - EDIT HERE TO CHANGE SIZE === */
   .homecontent h1 {
-    font-size: 6rem;
+    font-size: 8rem;
     top: 2.5rem;
   }
   .callbtn button, .callbtn2 button {
@@ -502,7 +502,7 @@ header {
   }
 
   .homecontent h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
     padding: 25px 600px;
@@ -590,6 +590,38 @@ header {
     width: 100%;
   }
 
+  /* Make team section image and text use flex and equal height on mobile */
+  .choosecontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .chooseimg, .choosewriteup2 {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+  }
+
+  .chooseimg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Ensure the paragraph fills the same height as the image and its content is vertically centered */
+  .choosewriteup2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .choosewriteup2 p {
+    margin: 0;
+  }
+
   .carddif {
     display: grid;
     grid-template-columns: 1fr;
@@ -661,9 +693,9 @@ header {
 
   /* Make hero heading fluid and avoid huge paddings that cause overflow */
   .homecontent h1 {
-    padding-inline: 1rem ;
+    padding-inline: 1rem !important;
     top: 3rem;
-    font-size: 6rem;
+    font-size: clamp(1.6rem, 5vw, 3rem) !important;
     max-width: 100%;
     margin: 1.2rem auto;
     box-sizing: border-box;
@@ -700,7 +732,7 @@ header {
 @media (max-width: 480px) {
   .homecontent h1 {
     top: 2rem;
-    font-size: 6rem;
+    font-size: clamp(1.2rem, 7vw, 2.4rem) !important;
     padding-inline: 0.75rem !important;
   }
 
