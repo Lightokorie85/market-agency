@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Central</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="parentcontainer">
+    <div class="headcontainer">
+        <nav class="navbar navbar-expand-lg" style="z-index: 100">
+          <div class="container-fluid">
+            <a href="" class="navbar-brand" weight="20px:" height="20px">
+              <img src="./dist/assets/MarketCentral Agency logo_20250810_092255_0000.png" alt="" class="BrandLogo" />
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav gap-3 align-items-left">
+                <li class="nav-item">
+                  <a href="#Home"></a>
+                  <div class="nav-link" data-section="home">Home</div>
+                </li>
+                <li class="nav-item">
+                  <a href="#Services"></a>
+                  <div class="nav-link" data-section="services">Services</div>
+                </li>
+                <li class="nav-item">
+                  <a href="#choose"></a>
+                  <div class="nav-link" data-section="about">About us</div>
+                </li>
+                <li class="nav-item active">
+                  <a href="#Contact us"></a>
+                  <div class="nav-link" data-section="contact">
+                    Contact us
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="sectionhome" id="Home">
+        <div class="homecontent">
+          <h1> <span> Reach the</span> Right <span>Audience</span>.</h1>
+        </div>
+      </section>
+    </div>
+
+    <!-- call section -->
+    <div class="callAction">
+      <div class="calltext">
+        <p>
+          Wether it is a product or service, Event—Brand <br />
+          we are committed to help you get seen by <br />
+          the right person! This site is an easy-to-use platform.
+        </p>
+      </div>
+      <div class="callbtn">
+        <button>Hire Us</button>
+      </div>
+    </div>
+
+    <!-- Service Section -->
+    <div class="carddif">
+      <div class="card-container">
+        <div class="card">
+          <div class="front" id="frontimg1">
+            <img src="./dist/assets/image/event.png" alt="">
+          </div>
+          <div class="back">
+            <h3>
+              Reach your audience with powerful brand campgns tailored to grow
+              visibility and trust.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- card2 -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front" id="frontimg2">
+            <img src="./dist/assets/image/influencer.png" alt="">
+          </div>
+          <div class="back">
+            <h3>
+              Connect with top influencers who can amlify your message and
+              engage the right audience.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front" id="frontimg3">
+            <img src="./dist/assets/image/marketing.png" alt="">
+          </div>
+          <div class="back">
+            <h3>
+              Boost attendance and awareness by showcasing your event across
+              multiple platforms.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!-- card4 -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front" id="frontimg4">
+            <img src="./dist/assets/image/product.png" alt="">
+          </div>
+          <div class="back">
+            <h3>
+              Hirer an Influencer let your product be know by the right audience
+              through the help of a well known influencer</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <section id="choose" class="choose">
+    <div class="spanni">
+      <p>
+        <span>Why Chose Us</span> <br />
+      </p>
+    </div>
+
+    <div class="choosecontent">
+      <div class="chooseimg">
+        <div class="choosewriteup">
+          <p>
+            We provide personalised strategies <br> and make data driven decisions.
+            Our results are also traceable with suitable analytics
+          </p>
+          <div class="callbtn2">
+            <button>Start Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why About Us Section -->
+  <section class="choose2">
+    <h2 id="chooseId">Team</h2>
+    <div class="choosecontainer">
+      <div class="chooseimg">
+        <img src="/dist/assets/image/1758264094525.jpg" alt="" />
+      </div>
+      <div class="choosewriteup2" id="About us">
+        <p>
+          We are a Team of young expert in marketing and promotion,
+          passionate about helping existing and emerging businesses and
+          concepts gain relevant visibility to thrive
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="connect">
+    <h1><bold>Get In Touch</bold></h1>
+              <div class="form">
+            <form action="">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                    <textarea name=""  cols="40" rows="10" required id="message" draggable="false"></textarea>
+                </div>
+                <div class="sub">
+                    <button type="submit" style="width: 100%;">Submit</button>
+                </div>
+            </form>
+        </div>
+
+  </div>
+
+  <section class="connect-section">
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="facebook.com" class="icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/big_phavor?t=34PuZSs3EW7xDRG_MYqBGQ&s=09" class="icon"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/n_favorvic?igsh=N3Fsbzl0MjVwMThq" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/posts/light-okorie-a90895335_sgit2026-frontenddeveloper-tech-activity-7393559392991834112-RfKZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClrdWwBLag1ZnSXm0ky5i17NTUJXQLnlOI" class="icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.twitch.tv/jadrolitagirl" class="icon"><i class="fab fa-twitch"></i></a>
+    </div>
+  </section>
+
+
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/8ea38cc537.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+  integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<!-- Correct way of pasting -->
+<script src="/index.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+</html>

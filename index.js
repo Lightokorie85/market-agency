@@ -1,0 +1,6 @@
+// Add click event to flip each card
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
