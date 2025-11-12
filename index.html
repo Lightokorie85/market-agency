@@ -20,25 +20,23 @@
             <a href="" class="navbar-brand" weight="20px:" height="20px">
               <img src="./dist/assets/MarketCentral Agency logo_20250810_092255_0000.png" alt="" class="BrandLogo" />
             </a>
+            <!-- Bootstrap toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav gap-3 align-items-left">
                 <li class="nav-item">
-                  <a href="#Home"></a>
-                  <div class="nav-link" data-section="home">Home</div>
+                  <a class="nav-link" href="#sectionhome" data-section="home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#Services"></a>
-                  <div class="nav-link" data-section="services">Services</div>
+                  <a class="nav-link" href="#carddif" data-section="services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#choose"></a>
-                  <div class="nav-link" data-section="about">About us</div>
+                  <a class="nav-link" href="#choose" data-section="about">About us</a>
                 </li>
                 <li class="nav-item active">
-                  <a href="#Contact us"></a>
-                  <div class="nav-link" data-section="contact">
-                    Contact us
-                  </div>
+                  <a class="nav-link" href="#connect" data-section="contact">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -46,7 +44,7 @@
         </nav>
       </header>
 
-      <section class="sectionhome" id="Home">
+      <section class="sectionhome" id="sectionhome">
         <div class="homecontent">
           <h1> <span> Reach the</span> Right <span>Audience</span>.</h1>
         </div>
@@ -67,8 +65,8 @@
       </div>
     </div>
 
-    <!-- Service Section -->
-    <div class="carddif">
+  <!-- Service Section -->
+  <div class="carddif" id="carddif">
       <div class="card-container">
         <div class="card">
           <div class="front" id="frontimg1">
@@ -161,35 +159,36 @@
       </div>
       <div class="choosewriteup2" id="About us">
         <p>
-          We are a Team of young expert in marketing and promotion,
-          passionate about helping existing and emerging businesses and
-          concepts gain relevant visibility to thrive
+          We are a Team of young expert in marketing <br> and promotion,
+          passionate about helping <br>existing and emerging businesses and
+          concepts <br> gain relevant visibility to thrive
         </p>
       </div>
     </div>
   </section>
 
-  <div class="connect">
+  <div class="connect" id="connect">
     <h1><bold>Get In Touch</bold></h1>
               <div class="form">
-            <form action="">
-                <div class="name">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="message">
-                    <label for="message">Message</label>
-                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-                    <textarea name=""  cols="40" rows="10" required id="message" draggable="false"></textarea>
-                </div>
-                <div class="sub">
-                    <button type="submit" style="width: 100%;">Submit</button>
-                </div>
-            </form>
+      <!-- Simple mailto fallback: opens user's email client with form content addressed to your email -->
+      <form action="mailto:lightokorie85@gmail.com" method="post" enctype="text/plain">
+        <input type="hidden" name="subject" value="Website Contact Form Submission">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" cols="40" rows="10" required id="message" draggable="false"></textarea>
+        </div>
+        <div class="sub">
+          <button type="submit" style="width: 100%;">Submit</button>
+        </div>
+      </form>
         </div>
 
   </div>
